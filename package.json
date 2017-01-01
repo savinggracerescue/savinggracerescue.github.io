@@ -1,0 +1,40 @@
+{
+  "name": "tub-man",
+  "version": "1.0.0",
+  "description": "Website for Saving Grace Rescue",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^1.9.2",
+    "gulp-autoprefixer": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp-cssnano": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savinggracerescue/savinggracerescue.github.io.git"
+  },
+  "keywords": [
+    "Jekyll",
+    "based",
+    "website",
+    "for",
+    "Ronald",
+    "Lovern"
+  ],
+  "author": "Bram Gagliardi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savinggracerescue/savinggracerescue.github.io.git/issues"
+  },
+  "homepage": "https://github.com/savinggracerescue/savinggracerescue.github.io.git#readme"
+}

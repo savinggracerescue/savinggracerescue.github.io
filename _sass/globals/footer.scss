@@ -1,0 +1,40 @@
+footer.footer {
+    background-color: $accent-color2;
+    color: $accent-color1;
+
+    .footer-primary {
+        padding: 2em 0;
+        @include span-columns(12);
+
+        & > section {
+            @include span-columns(4);
+        }
+        
+        nav {
+            li {
+                border-bottom: 1px dotted $accent-color1;
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    padding: .5em 0;
+                    color: $accent-color1;
+
+                    &:hover {
+                        color: $accent-color4;
+                    }
+                }
+            }
+
+            &.mobile {
+                display: none;
+            }
+        }
+    }
+
+    .footer-secondary {
+        @include span-columns(12);
+        text-align: center;
+        margin: 1em 0;
+    }
+}

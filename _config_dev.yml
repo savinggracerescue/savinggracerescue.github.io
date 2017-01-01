@@ -1,0 +1,15 @@
+highlighter: rouge
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+include: ["_pages"]
+navigation: ["adoption", "get involved", "success stories", "about", "contact"]
+name1: Amber Holly
+phone1: 415-407-8021
+email1: totemra@gmail.com
+location1: Olympia, WA
+name2: Sarah Cook
+location2: San Francisco Bay Area, CA
+deal: no
+company: Saving Grace Rescue Inc
+ein: EIN 27-2987970
+overview: Non-profit feline rescue for at risk kittens ages one day to 8 weeks and injured, abused or special needs kittens in the San Francisco Bay Area and Olympia, WA.
+facebook: https://www.facebook.com/pages/Saving-Grace-Rescue-Inc/131072820282688

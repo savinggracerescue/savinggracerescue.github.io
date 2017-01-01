@@ -1,0 +1,27 @@
+<nav class="mobile">
+    <a href="#"><span></span></a>
+    <ul>
+    {% for page in site.navigation %}
+        <li>
+            <a href="/{{ page | replace: ' ', '-' }}">{{ page | replace: '-', ' ' }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</nav>
+<nav class="desktop">
+    <ul>
+    {% for item in site.navigation %}
+        <li>
+            {% if page.url contains item or item contains 'home' and page.url == '/' %}
+                <a href="/{% unless item contains 'home' %}{{ item | replace: ' ', '-' }}{% endunless %}" class="active">
+                    {{ item | replace: '-', ' ' }}
+                </a>
+            {% else %}
+                <a href="/{% unless item contains 'home' %}{{ item | replace: ' ', '-' }}{% endunless %}">
+                    {{ item | replace: '-', ' ' }}
+                </a>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

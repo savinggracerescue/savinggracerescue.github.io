@@ -1,0 +1,42 @@
+.contact {
+    .text, img {
+        width: 50%;
+        float: left;
+    }
+
+    .content > section {
+        .washington, .san-francisco {
+            position: relative;
+            text-align: center;
+        }
+        
+        .washington {
+            .text {
+                p {
+                    top: 50%;
+                    right: 25%;
+                    position: absolute;
+                    transform: translate(50%,-50%);
+                }
+            }
+        }
+
+        .san-francisco {
+            .text {
+                float: none;
+            }
+
+            img {
+                float: right;
+            }
+
+            p {
+                top: 50%;
+                left: 25%;
+                right: auto;
+                position: absolute;
+                transform: translate(-50%,-50%);
+            }            
+        }            
+    }
+}

@@ -1,0 +1,13 @@
+// Fonts
+$font-copy: 'Roboto', sans-serif;
+$font-heading: 'Playfair Display', serif;
+
+$primary-color: #04BFF2;
+
+$accent-color1: #086788;
+$accent-color2: #F0C808;
+$accent-color3: #FFF1D0;
+$accent-color4: #DD1C1A;
+
+$mobile: new-breakpoint(max-width 500px);
+$desktop: new-breakpoint(min-width 1200px);
