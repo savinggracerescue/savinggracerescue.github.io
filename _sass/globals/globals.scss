@@ -95,26 +95,5 @@ a.btn {
 
 .primary {
     @include outer-container(58em);
-    padding: 2em 0;
-
-    .ctas {
-        &>li {
-            @include span-columns(4);
-            text-align: center;
-            border: 1px solid #eee;
-            border-radius: .3em;
-            padding: .5em .2em;
-
-            header {
-                img {
-                    width: 100%;
-                    margin-bottom: 1em;
-                }
-
-                h2 {
-                    text-align: center;
-                }
-            }
-        }
-    }    
+    padding: 2em 0;    
 }

@@ -553,22 +553,6 @@ a.btn {
     clear: both;
     content: "";
     display: block; }
-  .primary .ctas > li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    text-align: center;
-    border: 1px solid #eee;
-    border-radius: .3em;
-    padding: .5em .2em; }
-    .primary .ctas > li:last-child {
-      margin-right: 0; }
-    .primary .ctas > li header img {
-      width: 100%;
-      margin-bottom: 1em; }
-    .primary .ctas > li header h2 {
-      text-align: center; }
 
 footer.footer {
   background-color: #F0C808;
@@ -664,7 +648,7 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo4.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo10.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -685,7 +669,8 @@ header.header {
   .eyecatcher h1:first-child {
     margin: 2em 0; }
   .eyecatcher h3 {
-    margin: 1em 0 2em 0; }
+    margin: 1em 0 2em 0;
+    border-bottom: 0; }
   .eyecatcher:before {
     content: '';
     position: absolute;
@@ -699,6 +684,53 @@ header.header {
 
 .index .eyecatcher h1:first-child {
   margin: 1.6em 0 0 0; }
+
+.index .ctas {
+  display: -ms-flexbox;
+  display: flex; }
+  .index .ctas > li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: .3em;
+    padding: .5em .2em 4em .2em;
+    position: relative; }
+    .index .ctas > li:last-child {
+      margin-right: 0; }
+    .index .ctas > li a {
+      display: block;
+      overflow: hidden; }
+      .index .ctas > li a header {
+        height: 12em;
+        position: relative;
+        z-index: 10;
+        text-indent: -9999px;
+        transition: all .5s ease-in-out; }
+        .index .ctas > li a header:hover {
+          -webkit-transform: scale(1.2);
+                  transform: scale(1.2); }
+        .index .ctas > li a header img {
+          width: 100%;
+          margin-bottom: 1em; }
+      .index .ctas > li a:last-child {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; }
+    .index .ctas > li.adoption header {
+      background: url("/images/cta1.jpg") no-repeat;
+      background-size: cover; }
+    .index .ctas > li.get-involved header {
+      background: url("/images/cta2.jpg") no-repeat;
+      background-size: cover; }
+    .index .ctas > li.about header {
+      background: url("/images/cta3.jpg") no-repeat;
+      background-size: cover; }
+    .index .ctas > li h2 {
+      text-align: center; }
 
 .adoption .adoption-agreement {
   background-color: #fff;
