@@ -1,6 +1,7 @@
 body {
     font-size: 125%;
     font-family: $font-copy;
+    color: $accent-color1;
 }
 
 .content, .inner {
@@ -22,11 +23,24 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    border-bottom: 1px solid $accent-color1;
+    padding: 0 0 .5em 0;
+    margin-bottom: .5em;
 }
 
 p {
     line-height: 1.8em;
     margin-bottom: 1em;
+}
+
+ul {
+    margin: 1em 0 1em 2em;
+    list-style: disc;
+
+    li {
+        padding: 0 0 .5em 0;
+        line-height: 1.6;
+    }
 }
 
 img {

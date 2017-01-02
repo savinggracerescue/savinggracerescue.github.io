@@ -469,7 +469,8 @@ html {
 /* Literal.Number.Integer.Long */
 body {
   font-size: 125%;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #086788; }
 
 .content, .inner {
   max-width: 58em;
@@ -491,11 +492,21 @@ h2 {
   margin-bottom: .5em; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  border-bottom: 1px solid #086788;
+  padding: 0 0 .5em 0;
+  margin-bottom: .5em; }
 
 p {
   line-height: 1.8em;
   margin-bottom: 1em; }
+
+ul {
+  margin: 1em 0 1em 2em;
+  list-style: disc; }
+  ul li {
+    padding: 0 0 .5em 0;
+    line-height: 1.6; }
 
 img.small {
   width: 20em; }
@@ -574,15 +585,19 @@ footer.footer {
       width: 31.76157%; }
       footer.footer .footer-primary > section:last-child {
         margin-right: 0; }
-    footer.footer .footer-primary nav li {
-      border-bottom: 1px dotted #086788; }
-      footer.footer .footer-primary nav li a {
-        display: inline-block;
-        text-decoration: none;
-        padding: .5em 0;
-        color: #086788; }
-        footer.footer .footer-primary nav li a:hover {
-          color: #DD1C1A; }
+    footer.footer .footer-primary nav ul {
+      list-style: none;
+      margin: 0; }
+      footer.footer .footer-primary nav ul li {
+        border-bottom: 1px dotted #086788;
+        padding: 0; }
+        footer.footer .footer-primary nav ul li a {
+          display: inline-block;
+          text-decoration: none;
+          padding: .5em 0;
+          color: #086788; }
+          footer.footer .footer-primary nav ul li a:hover {
+            color: #DD1C1A; }
     footer.footer .footer-primary nav.mobile {
       display: none; }
   footer.footer .footer-secondary {
@@ -628,9 +643,11 @@ header.header {
     header.header nav.desktop ul {
       display: block;
       float: right;
-      margin-top: 1.5em; }
+      margin: 1.5em 0 0 0;
+      list-style: none; }
       header.header nav.desktop ul li {
-        float: left; }
+        float: left;
+        padding: 0; }
         header.header nav.desktop ul li a {
           display: block;
           padding: 1em;
@@ -704,3 +721,49 @@ header.header {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
+.adoption ul.general-fees {
+  list-style: none;
+  margin: 1em 0;
+  display: -ms-flexbox;
+  display: flex; }
+  .adoption ul.general-fees li {
+    padding: 1em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: center;
+    color: white; }
+    .adoption ul.general-fees li:last-child {
+      margin-right: 0; }
+    .adoption ul.general-fees li div {
+      height: 50%;
+      position: relative; }
+    .adoption ul.general-fees li h4 {
+      font-size: 3em;
+      padding-top: .2em; }
+    .adoption ul.general-fees li img {
+      width: 50%; }
+    .adoption ul.general-fees li:nth-child(1) {
+      background: linear-gradient(#04BFF2, #0397c0); }
+      .adoption ul.general-fees li:nth-child(1) img {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .adoption ul.general-fees li:nth-child(2) {
+      background: linear-gradient(#086788, #054358); }
+      .adoption ul.general-fees li:nth-child(2) img {
+        width: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+        .adoption ul.general-fees li:nth-child(2) img:nth-child(2) {
+          left: inherit;
+          right: 0; }
+    .adoption ul.general-fees li:nth-child(3) {
+      background: linear-gradient(#F0C808, #bf9f06); }
+      .adoption ul.general-fees li:nth-child(3) img {
+        width: 60%; }

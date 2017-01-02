@@ -11,17 +11,23 @@ footer.footer {
         }
         
         nav {
-            li {
-                border-bottom: 1px dotted $accent-color1;
+            ul {
+                list-style: none;
+                margin: 0;
 
-                a {
-                    display: inline-block;
-                    text-decoration: none;
-                    padding: .5em 0;
-                    color: $accent-color1;
+                li {
+                    border-bottom: 1px dotted $accent-color1;
+                    padding: 0;
 
-                    &:hover {
-                        color: $accent-color4;
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        padding: .5em 0;
+                        color: $accent-color1;
+
+                        &:hover {
+                            color: $accent-color4;
+                        }
                     }
                 }
             }
