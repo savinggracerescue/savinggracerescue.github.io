@@ -10,6 +10,10 @@ body {
 
 .wrapper > section > section {
     padding: 2em;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -84,6 +88,10 @@ a.btn {
             border-color: lighten($accent-color2,20%);
             color: $accent-color1;
         }        
+    }
+
+    &.large {
+        font-size: 1.2em;
     }
 }
 
