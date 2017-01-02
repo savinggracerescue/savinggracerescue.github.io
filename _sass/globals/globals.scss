@@ -8,6 +8,10 @@ body {
     @include outer-container(58em);
 }
 
+.wrapper > section > section {
+    padding: 2em;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: $font-heading;
 }
