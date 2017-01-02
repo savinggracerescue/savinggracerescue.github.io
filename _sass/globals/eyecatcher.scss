@@ -3,6 +3,7 @@
         linear-gradient( rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4) ),
         url('/images/cover/cover-photo' + random(10) + '.jpg');
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
     padding: 8em 0 5em 0;
     position: relative;
@@ -19,7 +20,7 @@
 
     h1 {
         &:first-child {
-            margin-top: 1.6em;
+            margin: 2em 0;
         }
     }
 

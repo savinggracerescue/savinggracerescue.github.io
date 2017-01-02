@@ -3,18 +3,15 @@ $(function() {
         $(this).next().stop().slideToggle().parent().toggleClass('active');
     });
 });
-
 $(function() {
-    if ($('.index').length == 1) {
-        var number = 1 + Math.floor(Math.random() * 10),
-            imageUrl = "/images/cover/cover-photo" + number + ".jpg";
+    var number = 1 + Math.floor(Math.random() * 10),
+        imageUrl = "/images/cover/cover-photo" + number + ".jpg";
 
-        $('.eyecatcher').css({
-            "background": "linear-gradient(rgba(8, 103, 136, 0.5), rgba(8, 103, 136, 0.5)), url("+imageUrl+") no-repeat",
-            "background-size": "cover"
-        });
-        console.log(imageUrl);
-    }
+    $('.eyecatcher').css({
+        "background": "linear-gradient(rgba(8, 103, 136, 0.5), rgba(8, 103, 136, 0.5)), url("+imageUrl+") no-repeat",
+        "background-size": "cover",
+        "background-position": "center"
+    });
 });
 /**
  * BxSlider v4.1.2 - Fully loaded, responsive content slider

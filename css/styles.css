@@ -664,8 +664,9 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo8.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo4.jpg");
   background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
   padding: 8em 0 5em 0;
   position: relative; }
@@ -682,7 +683,7 @@ header.header {
   .eyecatcher h1, .eyecatcher h3 {
     color: white; }
   .eyecatcher h1:first-child {
-    margin-top: 1.6em; }
+    margin: 2em 0; }
   .eyecatcher h3 {
     margin: 1em 0 2em 0; }
   .eyecatcher:before {
@@ -696,34 +697,8 @@ header.header {
   .eyecatcher a.btn {
     margin-right: 1em; }
 
-.contact .text, .contact img {
-  width: 50%;
-  float: left; }
-
-.contact .content > section .washington, .contact .content > section .san-francisco {
-  position: relative;
-  text-align: center; }
-
-.contact .content > section .washington .text p {
-  top: 50%;
-  right: 25%;
-  position: absolute;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%); }
-
-.contact .content > section .san-francisco .text {
-  float: none; }
-
-.contact .content > section .san-francisco img {
-  float: right; }
-
-.contact .content > section .san-francisco p {
-  top: 50%;
-  left: 25%;
-  right: auto;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+.index .eyecatcher h1:first-child {
+  margin: 1.6em 0 0 0; }
 
 .adoption .adoption-agreement {
   background-color: #fff;
@@ -784,3 +759,32 @@ header.header {
   .adoption .action a, .adoption .action p {
     display: inline;
     margin-right: 1em; }
+
+.contact .text, .contact img {
+  width: 50%;
+  float: left; }
+
+.contact .content > section .washington, .contact .content > section .san-francisco {
+  position: relative;
+  text-align: center; }
+
+.contact .content > section .washington .text p {
+  top: 50%;
+  right: 25%;
+  position: absolute;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%); }
+
+.contact .content > section .san-francisco .text {
+  float: none; }
+
+.contact .content > section .san-francisco img {
+  float: right; }
+
+.contact .content > section .san-francisco p {
+  top: 50%;
+  left: 25%;
+  right: auto;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
