@@ -558,6 +558,52 @@ a.btn {
     content: "";
     display: block; }
 
+ul.color-columns {
+  list-style: none;
+  margin: 1em 0;
+  display: -ms-flexbox;
+  display: flex; }
+  ul.color-columns li {
+    padding: 1em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: center;
+    color: white; }
+    ul.color-columns li:last-child {
+      margin-right: 0; }
+    ul.color-columns li div {
+      height: 50%;
+      position: relative; }
+    ul.color-columns li h4 {
+      font-size: 3em;
+      padding-top: .2em; }
+    ul.color-columns li img {
+      width: 50%; }
+    ul.color-columns li:nth-child(1) {
+      background: linear-gradient(#04BFF2, #0397c0); }
+      ul.color-columns li:nth-child(1) img {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    ul.color-columns li:nth-child(2) {
+      background: linear-gradient(#086788, #054358); }
+      ul.color-columns li:nth-child(2) img {
+        width: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+        ul.color-columns li:nth-child(2) img:nth-child(2) {
+          left: inherit;
+          right: 0; }
+    ul.color-columns li:nth-child(3) {
+      background: linear-gradient(#F0C808, #bf9f06); }
+      ul.color-columns li:nth-child(3) img {
+        width: 60%; }
+
 footer.footer {
   background-color: #F0C808;
   color: #086788; }
@@ -652,7 +698,7 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo5.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo4.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -768,52 +814,6 @@ header.header {
 
 .adoption .adoption-fees {
   background: url(/images/seamless_paper_texture.png) repeat; }
-
-.adoption ul.general-fees {
-  list-style: none;
-  margin: 1em 0;
-  display: -ms-flexbox;
-  display: flex; }
-  .adoption ul.general-fees li {
-    padding: 1em;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    text-align: center;
-    color: white; }
-    .adoption ul.general-fees li:last-child {
-      margin-right: 0; }
-    .adoption ul.general-fees li div {
-      height: 50%;
-      position: relative; }
-    .adoption ul.general-fees li h4 {
-      font-size: 3em;
-      padding-top: .2em; }
-    .adoption ul.general-fees li img {
-      width: 50%; }
-    .adoption ul.general-fees li:nth-child(1) {
-      background: linear-gradient(#04BFF2, #0397c0); }
-      .adoption ul.general-fees li:nth-child(1) img {
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); }
-    .adoption ul.general-fees li:nth-child(2) {
-      background: linear-gradient(#086788, #054358); }
-      .adoption ul.general-fees li:nth-child(2) img {
-        width: 50%;
-        position: absolute;
-        left: 0;
-        bottom: 0; }
-        .adoption ul.general-fees li:nth-child(2) img:nth-child(2) {
-          left: inherit;
-          right: 0; }
-    .adoption ul.general-fees li:nth-child(3) {
-      background: linear-gradient(#F0C808, #bf9f06); }
-      .adoption ul.general-fees li:nth-child(3) img {
-        width: 60%; }
 
 .adoption .action {
   text-align: center;

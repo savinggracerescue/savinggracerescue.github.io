@@ -7,68 +7,6 @@
     .adoption-fees {
         background: url(/images/seamless_paper_texture.png) repeat;
     }
-    
-    ul.general-fees {
-        list-style: none;
-        margin: 1em 0;
-        display: flex;
-
-        li {
-            padding: 1em;
-            @include span-columns(4);
-            text-align: center;
-            color: white;
-
-            div {
-                height: 50%;
-                position: relative;
-            }
-
-            h4 {
-                font-size: 3em;
-                padding-top: .2em;
-            }
-
-            img {
-                width: 50%;
-            }            
-
-            &:nth-child(1) {
-                background: linear-gradient($primary-color,darken($primary-color,10%));
-
-                img {
-                    position: absolute;
-                    left: 50%;
-                    bottom: 0;
-                    transform: translateX(-50%);
-                }
-            }
-
-            &:nth-child(2) {
-                background: linear-gradient($accent-color1,darken($accent-color1,10%));
-
-                img {
-                    width: 50%;
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-
-                    &:nth-child(2) {
-                        left: inherit;
-                        right: 0;
-                    }
-                }
-            }
-
-            &:nth-child(3) {
-                background: linear-gradient($accent-color2,darken($accent-color2,10%));
-
-                img {
-                    width: 60%;
-                }
-            }
-        }
-    }
 
     .action {
         text-align: center;
