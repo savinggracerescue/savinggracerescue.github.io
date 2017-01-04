@@ -641,6 +641,20 @@ ul.color-columns {
     .ctas > li h2 {
       text-align: center; }
 
+section .cta-large .image, section .cta-large .copy {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  float: left; }
+  section .cta-large .image:last-child, section .cta-large .copy:last-child {
+    margin-right: 0; }
+
+section .cta-large:nth-child(even) {
+  background: url("/images/bedge_grunge.png"); }
+  section .cta-large:nth-child(even) .image, section .cta-large:nth-child(even) .copy {
+    float: right; }
+
 footer.footer {
   background-color: #F0C808;
   color: #086788; }
@@ -735,7 +749,7 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo1.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo3.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -811,6 +825,9 @@ header.header {
   .adoption .action a, .adoption .action p {
     display: inline;
     margin-right: 1em; }
+
+.get-involved #donate {
+  background: url("/images/bedge_grunge.png"); }
 
 .contact .text, .contact img {
   width: 50%;

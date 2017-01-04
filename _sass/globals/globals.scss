@@ -212,3 +212,19 @@ ul.color-columns {
         }
     }
 }    
+
+section {
+    .cta-large {
+        .image,.copy {
+            @include span-columns(6);
+            float: left;
+        }
+
+        &:nth-child(even) {
+            background: url('/images/bedge_grunge.png');
+            .image,.copy {
+                float: right;
+            }
+        }
+    }
+}
