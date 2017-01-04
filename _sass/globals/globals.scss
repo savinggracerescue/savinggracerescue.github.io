@@ -167,3 +167,48 @@ ul.color-columns {
         }
     }
 }
+
+.ctas {
+    display: flex;
+
+    &>li {
+        @include span-columns(4);
+        text-align: center;
+        border: 1px solid #eee;
+        border-radius: .3em;
+        padding: .5em .2em 4em .2em;
+        position: relative;
+
+        a {
+            display: block;
+            overflow: hidden;
+
+            header {
+                height: 12em;
+                position: relative;
+                z-index: 10;
+                transition: all .5s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+            }
+
+            &:last-child {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+}    
