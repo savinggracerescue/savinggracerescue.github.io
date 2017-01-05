@@ -513,8 +513,11 @@ ul {
     padding: 0 0 .5em 0;
     line-height: 1.6; }
 
-img.small {
-  width: 20em; }
+img {
+  max-width: 100%;
+  height: auto; }
+  img.small {
+    width: 20em; }
 
 flt-left {
   float: left; }
@@ -641,18 +644,32 @@ ul.color-columns {
     .ctas > li h2 {
       text-align: center; }
 
-section .cta-large .image, section .cta-large .copy {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  float: left; }
-  section .cta-large .image:last-child, section .cta-large .copy:last-child {
-    margin-right: 0; }
+section .cta-large {
+  height: 30em; }
+  section .cta-large .inner {
+    height: 100%; }
+    section .cta-large .inner > section {
+      height: 100%; }
+      section .cta-large .inner > section .image, section .cta-large .inner > section .copy {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        float: left; }
+        section .cta-large .inner > section .image:last-child, section .cta-large .inner > section .copy:last-child {
+          margin-right: 0; }
+      section .cta-large .inner > section .copy {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        height: 100%; }
 
-section .cta-large:nth-child(even) {
+section:nth-child(even) {
   background: url("/images/bedge_grunge.png"); }
-  section .cta-large:nth-child(even) .image, section .cta-large:nth-child(even) .copy {
+  section:nth-child(even) .inner > section .image, section:nth-child(even) .inner > section .copy {
     float: right; }
 
 footer.footer {
@@ -749,7 +766,7 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo3.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo2.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;

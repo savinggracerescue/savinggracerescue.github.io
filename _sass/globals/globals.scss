@@ -52,6 +52,9 @@ ul {
 }
 
 img {
+    max-width: 100%;
+    height: auto;
+
     &.small {
         width: 20em;
     }
@@ -215,13 +218,33 @@ ul.color-columns {
 
 section {
     .cta-large {
-        .image,.copy {
-            @include span-columns(6);
-            float: left;
-        }
+        height: 30em;
 
-        &:nth-child(even) {
-            background: url('/images/bedge_grunge.png');
+        .inner {         
+            height: 100%;
+
+            &> section {
+                height: 100%;
+                
+                .image,.copy {
+                    @include span-columns(6);
+                    float: left;
+                }
+
+                .copy {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                }                
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        background: url('/images/bedge_grunge.png');
+        
+        .inner > section {
             .image,.copy {
                 float: right;
             }
