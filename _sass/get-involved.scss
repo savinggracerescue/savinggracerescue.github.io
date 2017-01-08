@@ -1,5 +1,21 @@
 .get-involved {
-    #donate {
-        background: url('/images/bedge_grunge.png');
+    .buttons {
+        .subscribe, .donate {
+            // @include span-columns(6);
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .subscribe {
+            border-bottom: 1px solid darken($accent-color1,10%);
+            padding: 0 0 2em 0;
+            margin: 0 0 2em 0;
+
+            .btn {
+                margin-top: 1em;
+            }
+        }
     }
 }

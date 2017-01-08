@@ -68,7 +68,13 @@ flt-right {
     float: right;
 }
 
-a.btn {
+button {
+    outline: none;
+    border: 0;
+    font-size: 1em;
+}
+
+.btn {
     padding: 25px 4em;
     background-color: $accent-color2;
     color: $accent-color1;
@@ -107,6 +113,59 @@ a.btn {
 .primary {
     @include outer-container(58em);
     padding: 2em 0;    
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+
+    &:-ms-expand {
+        display: none;
+    } 
+}
+
+.custom-select {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+
+    &:after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 1em;
+        background: #34495e;
+        pointer-events: none;
+    }
+    &:hover:after {
+        color: #f39c12;
+    }
+    &:after {
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+    }
 }
 
 ul.color-columns {
@@ -243,14 +302,22 @@ section {
                 }
             }
         }
-    &:nth-child(even) {
-        background: $primary-color;
-        
-        .inner > section {
-            .image,.copy {
-                float: right;
+        &:nth-child(even) {
+            background: $primary-color;
+            
+            .inner > section {
+                .image,.copy {
+                    float: right;
+                }
+
+                .copy {
+                    margin-right: 2.35765%;
+                }
+
+                .image {
+                    @include omega;
+                }
             }
         }
-    }
     }
 }

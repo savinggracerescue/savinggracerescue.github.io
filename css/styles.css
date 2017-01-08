@@ -160,36 +160,6 @@ html {
   font-size: .85em;
   padding: 10px; }
 
-/* Container used for styling the custom select, the buttom class below adds the
- * bg gradient, corners, etc. */
-.custom-select {
-  position: relative;
-  display: block; }
-
-/* This is the native select, we're making everything but the text invisible so
- * we can see the button styles in the wrapper */
-.custom-select select {
-  width: 100%;
-  margin: 0;
-  outline: none;
-  padding: .6em .8em .5em .8em;
-  /* Prefixed box-sizing rules necessary for older browsers */
-  box-sizing: border-box;
-  /* Font size must be 16px to prevent iOS page zoom on focus */
-  font-size: 16px; }
-
-/* Custom arrow sits on top of the select - could be an image, SVG, icon font,
- * etc. or the arrow could just baked into the bg image on the select. */
-.custom-select::after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  right: 1em;
-  z-index: 2;
-  /* These hacks make the select behind the arrow clickable in some browsers */
-  pointer-events: none;
-  display: none; }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -555,25 +525,30 @@ flt-left {
 flt-right {
   float: right; }
 
-a.btn {
+button {
+  outline: none;
+  border: 0;
+  font-size: 1em; }
+
+.btn {
   padding: 25px 4em;
   background-color: #F0C808;
   color: #086788;
   text-decoration: none;
   display: inline-block;
   transition: all .2s ease-in-out; }
-  a.btn:hover {
+  .btn:hover {
     background-color: #fae064; }
-  a.btn.outline {
+  .btn.outline {
     padding: 20px 4em;
     background: transparent;
     border: 5px solid #F0C808;
     color: #F0C808; }
-    a.btn.outline:hover {
+    .btn.outline:hover {
       background-color: #fae064;
       border-color: #fae064;
       color: #086788; }
-  a.btn.large {
+  .btn.large {
     font-size: 1.2em; }
 
 .group:after {
@@ -590,6 +565,49 @@ a.btn {
     clear: both;
     content: "";
     display: block; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em; }
+  select:-ms-expand {
+    display: none; }
+
+.custom-select {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em; }
+  .custom-select:after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #34495e;
+    pointer-events: none; }
+  .custom-select:hover:after {
+    color: #f39c12; }
+  .custom-select:after {
+    transition: .25s all ease; }
 
 ul.color-columns {
   list-style: none;
@@ -704,6 +722,10 @@ section .cta-large {
     background: #04BFF2; }
     section .cta-large:nth-child(even) .inner > section .image, section .cta-large:nth-child(even) .inner > section .copy {
       float: right; }
+    section .cta-large:nth-child(even) .inner > section .copy {
+      margin-right: 2.35765%; }
+    section .cta-large:nth-child(even) .inner > section .image {
+      margin-right: 0; }
 
 footer.footer {
   background-color: #F0C808;
@@ -799,7 +821,7 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo8.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo5.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -876,8 +898,15 @@ header.header {
     display: inline;
     margin-right: 1em; }
 
-.get-involved #donate {
-  background: url("/images/bedge_grunge.png"); }
+.get-involved .buttons .subscribe .btn, .get-involved .buttons .donate .btn {
+  width: 100%; }
+
+.get-involved .buttons .subscribe {
+  border-bottom: 1px solid #054358;
+  padding: 0 0 2em 0;
+  margin: 0 0 2em 0; }
+  .get-involved .buttons .subscribe .btn {
+    margin-top: 1em; }
 
 .contact .text, .contact img {
   width: 50%;

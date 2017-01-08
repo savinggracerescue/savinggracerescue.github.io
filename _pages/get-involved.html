@@ -10,39 +10,43 @@ layout: default
                 <img src="/images/paypal-logo.jpg">
             </div>
             <div class="copy">
-                <div class="content">
-                    <h2>Donate</h2>
-                    <div class="subscribe">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="custom-select">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="8H8BV9X5PXVTA">
-                            <input type="hidden" name="on0" value="Saving Grace Rescue Subscription Options">
-                                Saving Grace Rescue Subscription Options
-                            <select name="os0">
-                                <option value="Option 1">Option 1 : $5.00 USD - monthly</option>
-                                <option value="Option 2">Option 2 : $10.00 USD - monthly</option>
-                                <option value="Option 3">Option 3 : $1.00 USD - monthly</option>
-                                <option value="Option 4">Option 4 : $25.00 USD - monthly</option>
-                                <option value="Option 5">Option 5 : $50.00 USD - monthly</option>
-                                <option value="Option 6">Option 6 : $100.00 USD - monthly</option>
-                                <option value="Option 7">Option 7 : $500.00 USD - yearly</option>
-                                <option value="Option 8">Option 8 : $1,000.00 USD - yearly</option>
-                            </select>
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden="" style="display: none !important;">
-                        </form>
-                    </div>
-                    <div class="donate">
-                        <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
-                            <input type="hidden" name="cmd" value="_donations">
-                            <input type="hidden" name="business" value="totemra@gmail.com">
-                            <input type="hidden" name="item_name" value="Saving Grace Rescue Inc">
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="hidden" name="bn" value="godaddy_hosting_WPS_US">
-                            <input type="image" name="add" src="plugins/paypal/donate.gif">
-                        </form>
-                    </div>
+                <div class="copy-inner">
+                    <h2>Make a donation</h2>
+                    <section class="buttons">
+                        <div class="subscribe group">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="8H8BV9X5PXVTA">
+                                <input type="hidden" name="on0" value="Saving Grace Rescue Subscription Options">
+                                <div class="custom-select">
+                                    <select name="os0">
+                                        <option value="Option 1">$5.00 USD - monthly</option>
+                                        <option value="Option 2">$10.00 USD - monthly</option>
+                                        <option value="Option 3">$1.00 USD - monthly</option>
+                                        <option value="Option 4">$25.00 USD - monthly</option>
+                                        <option value="Option 5">$50.00 USD - monthly</option>
+                                        <option value="Option 6">$100.00 USD - monthly</option>
+                                        <option value="Option 7">$500.00 USD - yearly</option>
+                                        <option value="Option 8">$1,000.00 USD - yearly</option>
+                                    </select>
+                                </div>
+                                <input type="hidden" name="currency_code" value="USD">
+                                <button type="submit" class="btn">Subscribe</button>
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden="" style="display: none !important;">
+                            </form>
+                        </div>
+                        <h3>or</h3>
+                        <div class="donate">
+                            <form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal">
+                                <input type="hidden" name="cmd" value="_donations">
+                                <input type="hidden" name="business" value="totemra@gmail.com">
+                                <input type="hidden" name="item_name" value="Saving Grace Rescue Inc">
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="hidden" name="bn" value="godaddy_hosting_WPS_US">
+                                <button type="submit" class="btn">Donate</button>
+                            </form>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
@@ -56,8 +60,9 @@ layout: default
                 <img src="/images/td-amazon-hero.svg">
             </div>
             <div class="copy">
-                <div class="content">
+                <div class="copy-inner">
                     <h2>Our Amazon Wishlist</h2>
+                    <p>Surprise us and gift us something off of our Amazon Wishlist.</p>
                     <a href="http://www.amazon.com/gp/registry/wishlist/3UBXN2WET6A0C" class="btn">Go to Wishlist</a>
                 </div>
             </div>
@@ -72,7 +77,7 @@ layout: default
                 <img src="/images/gofundme.jpg">
             </div>
             <div class="copy">
-                <div class="content">
+                <div class="copy-inner">
                     <h2>Our gofundme campaign</h2>
                     <p>
                         At this time, SGR is turning to our incredible community for support. Our rent increase begins this month and we hope to relocate quickly. All donations are tax deductible. Thank you from everyone at Saving Grace Rescue Inc and the kittens of SGR! 
@@ -91,7 +96,7 @@ layout: default
                 <img src="/images/volunteer.png">
             </div>
             <div class="copy">
-                <div class="content">
+                <div class="copy-inner">
                     <h2>Things the kitties can always use:</h2>
                     <ul>
                         <li>Pet food store gift certificates</li>
