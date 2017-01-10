@@ -1,18 +1,40 @@
 .get-involved {
     .buttons {
+        text-align: center;
         .subscribe, .donate {
-            // @include span-columns(6);
-
             .btn {
                 width: 100%;
             }
         }
 
-        .subscribe {
-            border-bottom: 1px solid darken($accent-color1,10%);
-            padding: 0 0 2em 0;
-            margin: 0 0 2em 0;
+        h3 {
+            margin: 1em 0;
+            font-family: $font-copy;
+            display: inline-block;
+            position: relative;
+            padding: 1em;
 
+            &:before,
+            &:after {
+                background: darken($accent-color1,10%);
+                content: "";
+                display: block;
+                height: 1px;
+                position: absolute;
+                top: 50%;
+                width: 100%;
+            }
+
+            &:before {
+                right: 100%;
+            }
+
+            &:after {
+                left: 100%;
+            }            
+        }
+
+        .subscribe {
             .btn {
                 margin-top: 1em;
             }

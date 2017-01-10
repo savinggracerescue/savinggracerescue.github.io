@@ -821,7 +821,7 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo5.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo9.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -898,13 +898,28 @@ header.header {
     display: inline;
     margin-right: 1em; }
 
-.get-involved .buttons .subscribe .btn, .get-involved .buttons .donate .btn {
-  width: 100%; }
-
-.get-involved .buttons .subscribe {
-  border-bottom: 1px solid #054358;
-  padding: 0 0 2em 0;
-  margin: 0 0 2em 0; }
+.get-involved .buttons {
+  text-align: center; }
+  .get-involved .buttons .subscribe .btn, .get-involved .buttons .donate .btn {
+    width: 100%; }
+  .get-involved .buttons h3 {
+    margin: 1em 0;
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+    position: relative;
+    padding: 1em; }
+    .get-involved .buttons h3:before, .get-involved .buttons h3:after {
+      background: #054358;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      width: 100%; }
+    .get-involved .buttons h3:before {
+      right: 100%; }
+    .get-involved .buttons h3:after {
+      left: 100%; }
   .get-involved .buttons .subscribe .btn {
     margin-top: 1em; }
 
