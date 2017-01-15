@@ -9,8 +9,8 @@ body {
 }
 
 .wrapper > section > section {
-    padding: 2em;
-
+    padding: 2em 0;
+    
     h2 {
         text-align: center;
     }
@@ -279,6 +279,8 @@ section {
     .cta-large {
         height: 30em;
         background: $accent-color1;
+        overflow: hidden;
+        position: relative;
 
         .inner {         
             height: 100%;
@@ -294,7 +296,11 @@ section {
                     align-items: center;
                     justify-content: center;
                     height: 100%;
-                }             
+                }
+
+                .image img {
+                    position: absolute;
+                }
 
                 h2, p, td, ul {
                     text-align: left;
@@ -316,6 +322,10 @@ section {
 
                 .image {
                     @include omega;
+
+                    img {
+                        right: 0;
+                    }
                 }
             }
         }

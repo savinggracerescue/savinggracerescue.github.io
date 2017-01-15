@@ -2,12 +2,15 @@
 $font-copy: 'Roboto', sans-serif;
 $font-heading: 'Playfair Display', serif;
 
-$primary-color: #04BFF2;
+$primary-color: #709bbc;
 
-$accent-color1: #086788;
-$accent-color2: #F0C808;
-$accent-color3: #FFF1D0;
-$accent-color4: #DD1C1A;
+$accent-color1: #9fbfd6;
+$accent-color2: #3b75a3;
+$accent-color3: #abc36d;
+$accent-color4: #e3bf5f;
+$accent-color5: #f2f5fa;
+
+$font-color: #1d2129;
 
 $mobile: new-breakpoint(max-width 500px);
 $desktop: new-breakpoint(min-width 1200px);
