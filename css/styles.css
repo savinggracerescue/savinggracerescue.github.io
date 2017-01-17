@@ -530,6 +530,9 @@ button {
   border: 0;
   font-size: 1em; }
 
+a {
+  color: #3b75a3; }
+
 .btn {
   padding: 25px 4em;
   background-color: #FFC908;
@@ -641,7 +644,7 @@ ul.color-columns {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); }
     ul.color-columns li:nth-child(2) {
-      background: linear-gradient(#9fbfd6, #7ba7c7); }
+      background: linear-gradient(#abc36d, #96b34a); }
       ul.color-columns li:nth-child(2) img {
         width: 50%;
         position: absolute;
@@ -651,7 +654,7 @@ ul.color-columns {
           left: inherit;
           right: 0; }
     ul.color-columns li:nth-child(3) {
-      background: linear-gradient(#3b75a3, #2d5a7e); }
+      background: linear-gradient(#FFC908, #d4a600); }
       ul.color-columns li:nth-child(3) img {
         width: 60%; }
 
@@ -754,6 +757,12 @@ section .cta-large {
 footer.footer {
   background-color: #3b75a3;
   color: #9fbfd6; }
+  footer.footer a {
+    color: #9fbfd6;
+    border-bottom: 1px solid #9fbfd6;
+    text-decoration: none; }
+    footer.footer a:hover {
+      color: #FFC908; }
   footer.footer .footer-primary {
     padding: 2em 0;
     float: left;
@@ -779,7 +788,8 @@ footer.footer {
           display: inline-block;
           text-decoration: none;
           padding: .5em 0;
-          color: #9fbfd6; }
+          color: #9fbfd6;
+          border: none; }
           footer.footer .footer-primary nav ul li a:hover {
             color: #FFC908; }
     footer.footer .footer-primary nav.mobile {
@@ -842,7 +852,7 @@ header.header {
         header.header nav.desktop ul li a {
           display: block;
           padding: 1em;
-          color: #3b75a3;
+          color: #FFC908;
           text-decoration: none;
           transition: border .3s linear;
           border-bottom: 4px solid transparent; }

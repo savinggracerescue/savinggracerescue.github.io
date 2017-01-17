@@ -74,6 +74,10 @@ button {
     font-size: 1em;
 }
 
+a {
+    color: $accent-color2;
+}
+
 .btn {
     padding: 25px 4em;
     background-color: $accent-color4;
@@ -205,7 +209,7 @@ ul.color-columns {
         }
 
         &:nth-child(2) {
-            background: linear-gradient($accent-color1,darken($accent-color1,10%));
+            background: linear-gradient($accent-color3,darken($accent-color3,10%));
 
             img {
                 width: 50%;
@@ -221,7 +225,7 @@ ul.color-columns {
         }
 
         &:nth-child(3) {
-            background: linear-gradient($accent-color2,darken($accent-color2,10%));
+            background: linear-gradient($accent-color4,darken($accent-color4,10%));
 
             img {
                 width: 60%;

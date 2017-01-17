@@ -2,6 +2,15 @@ footer.footer {
     background-color: $accent-color2;
     color: $accent-color1;
 
+    a {
+        color: $accent-color1;
+        border-bottom: 1px solid $accent-color1;
+        text-decoration: none;
+        &:hover {
+            color: $accent-color4;
+        }        
+    }
+
     .footer-primary {
         padding: 2em 0;
         @include span-columns(12);
@@ -24,10 +33,10 @@ footer.footer {
                         text-decoration: none;
                         padding: .5em 0;
                         color: $accent-color1;
-
+                        border: none;
                         &:hover {
                             color: $accent-color4;
-                        }
+                        }                            
                     }
                 }
             }
