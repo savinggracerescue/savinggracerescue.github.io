@@ -38,9 +38,18 @@ footer.footer {
         }
     }
 
-    .footer-secondary {
+    .footer-secondary,
+    .footer-tertiary {
         @include span-columns(12);
         text-align: center;
-        margin: 1em 0;
+        margin: .5em 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .footer-tertiary {
+        margin-top: 0;
     }
 }

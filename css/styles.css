@@ -784,15 +784,22 @@ footer.footer {
             color: #FFC908; }
     footer.footer .footer-primary nav.mobile {
       display: none; }
-  footer.footer .footer-secondary {
+  footer.footer .footer-secondary,
+  footer.footer .footer-tertiary {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
     text-align: center;
-    margin: 1em 0; }
-    footer.footer .footer-secondary:last-child {
+    margin: .5em 0; }
+    footer.footer .footer-secondary:last-child,
+    footer.footer .footer-tertiary:last-child {
       margin-right: 0; }
+    footer.footer .footer-secondary p,
+    footer.footer .footer-tertiary p {
+      margin: 0; }
+  footer.footer .footer-tertiary {
+    margin-top: 0; }
 
 header.header {
   background: transparent;
@@ -845,7 +852,7 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo5.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo6.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
