@@ -1,0 +1,77 @@
+---
+title: Success Stories
+permalink: success-stories/
+layout: default
+---
+
+<ul class="stories">
+    {% for story in site.posts %}
+        <li class="story">
+            <div class="inner">
+                <section class="image">
+                    <ul class="slider{{ forloop.index }}">
+                        {% for image in story.images %}
+                            <li>
+                                <img src="/images/success-stories/{{image.thumbnail}}.jpg" alt="{{story.title}}">
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+                <section class="excerpt">
+                    <h2>
+                        {{story.title}}
+                    </h2>
+                    <p>
+                        {{story.excerpt}}
+                    </p>
+                    <footer>
+                        <ul>
+                            {% if story.facebook %}
+                                <li>
+                                    <a href="{{story.facebook}}">
+                                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if story.youtube %}
+                                <li>
+                                    <a href="{{story.youtube}}">
+                                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if story.instagram %}
+                                <li>
+                                    <a href="{{story.instagram}}">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if story.furrtographer %}
+                                <li>
+                                    <a href="{{story.furrtographer}}">
+                                        <i class="fa fa-paw" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            {% endif %}                            
+                        </ul>
+                    </footer>
+                </section>
+            </div>
+        </li>
+    {% endfor %}
+        <li class="love-meow">
+            <div class="inner">
+                <section class="image">
+                    <a href="http://www.lovemeow.com/tag/saving-grace-rescue/">
+                        <img src="/images/success-stories/love-meow.png" alt="Love Meow">
+                    </a>
+                </section>
+                <section class="excerpt">
+                    <p>
+                        We are regularly featured on Love Meow. Love Meow is where you find inspiring and beautiful stories about cats, rescues and fosters from all over the world.
+                    </p>
+                </section>
+            </div>
+        </li>
+</ul>

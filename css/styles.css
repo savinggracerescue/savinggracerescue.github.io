@@ -483,8 +483,6 @@ body {
 
 .wrapper > section > section {
   padding: 2em 0; }
-  .wrapper > section > section h2 {
-    text-align: center; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", serif; }
@@ -494,7 +492,8 @@ h1 {
 
 h2 {
   font-size: 2em;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  text-align: center; }
 
 h3 {
   font-size: 1.5em;
@@ -517,12 +516,12 @@ img {
   max-width: 100%;
   height: auto; }
   img.small {
-    width: 20em; }
+    width: 15em; }
 
-flt-left {
+.flt-left {
   float: left; }
 
-flt-right {
+.flt-right {
   float: right; }
 
 button {
@@ -862,7 +861,7 @@ header.header {
     display: none; }
 
 .eyecatcher {
-  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo6.jpg");
+  background: linear-gradient(rgba(255, 241, 208, 0.4), rgba(255, 241, 208, 0.4)), url("/images/cover/cover-photo9.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -966,6 +965,60 @@ header.header {
 
 .get-involved #other-ways {
   background-color: #f2f5fa; }
+
+.success-stories ul {
+  list-style: none;
+  margin: 0; }
+  .success-stories ul li.story {
+    height: 18em;
+    padding: 2em 0; }
+    .success-stories ul li.story:nth-child(even) {
+      background-color: #f2f5fa; }
+    .success-stories ul li.story .inner {
+      height: 100%; }
+      .success-stories ul li.story .inner .image {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        height: 100%; }
+        .success-stories ul li.story .inner .image:last-child {
+          margin-right: 0; }
+        .success-stories ul li.story .inner .image img {
+          border-radius: 50%;
+          object-fit: cover;
+          height: 100%;
+          width: 100%; }
+      .success-stories ul li.story .inner .excerpt {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 74.41059%; }
+        .success-stories ul li.story .inner .excerpt:last-child {
+          margin-right: 0; }
+        .success-stories ul li.story .inner .excerpt h2 {
+          text-align: left; }
+        .success-stories ul li.story .inner .excerpt footer li {
+          float: left; }
+          .success-stories ul li.story .inner .excerpt footer li a {
+            font-size: 2em;
+            margin-right: .5em; }
+  .success-stories ul li.love-meow {
+    padding: 4em 0;
+    background-color: #9fbfd6; }
+    .success-stories ul li.love-meow .inner {
+      max-width: 50em;
+      margin-left: auto;
+      margin-right: auto; }
+      .success-stories ul li.love-meow .inner::after {
+        clear: both;
+        content: "";
+        display: block; }
+      .success-stories ul li.love-meow .inner .image {
+        text-align: center;
+        margin-bottom: 1em; }
+      .success-stories ul li.love-meow .inner p {
+        margin: 0; }
 
 .contact .text, .contact img {
   width: 50%;

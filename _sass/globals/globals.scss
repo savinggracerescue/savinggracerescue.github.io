@@ -10,10 +10,6 @@ body {
 
 .wrapper > section > section {
     padding: 2em 0;
-
-    h2 {
-        text-align: center;
-    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -27,6 +23,7 @@ h1 {
 h2 {
     font-size: 2em;
     margin-bottom: .5em;
+    text-align: center;
 }
 
 h3 {
@@ -56,15 +53,15 @@ img {
     height: auto;
 
     &.small {
-        width: 20em;
+        width: 15em;
     }
 }
 
-flt-left {
+.flt-left {
     float: left;
 }
 
-flt-right {
+.flt-right {
     float: right;
 }
 
