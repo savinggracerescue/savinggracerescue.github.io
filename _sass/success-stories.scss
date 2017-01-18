@@ -5,30 +5,31 @@
 
         li {
             &.story {
-                height: 18em;
+                height: 20em;
                 padding: 2em 0;
+                display: flex;
+                align-items: center;
 
                 &:nth-child(even) {
                     background-color: $accent-color5;
                 }
 
                 .inner {
-                    height: 100%;
+                    display: flex;
+                    align-items: center;
 
                     .image {
-                        @include span-columns(3);
-                        height: 100%;
-                        
-                        img {
-                            border-radius: 50%;
-                            object-fit: cover;
-                            height: 100%;
-                            width: 100%;
+                        @include span-columns(4);
+
+                        .bx-wrapper,
+                        .bx-viewport {
+                            height: 13em !important;
+                            margin: 0;
                         }
                     }
 
                     .excerpt {
-                        @include span-columns(9);
+                        @include span-columns(8);
                         
                         h2 {
                             text-align: left;
@@ -37,6 +38,7 @@
                         footer {
                             li {
                                 float: left;
+                                line-height: 1;
 
                                 a {
                                     font-size: 2em;
